@@ -71,3 +71,29 @@ body {
     position: absolute;
     bottom: 0px;
 }
+
+#reserveModal {
+    .modal-header {
+        background-color: $background-dark;
+        color: white;
+        span {
+            color: white;
+        }
+    }
+    .modal-body {
+        background-color: $background-pale;
+    }
+}
+
+#loginModal {
+    .modal-header {
+        background-color: $background-dark;
+        color: white;
+        button {
+            color: white;
+        }
+    }
+    .modal-body {
+        background-color: $background-pale;
+    }
+}
