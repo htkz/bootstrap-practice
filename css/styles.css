@@ -50,7 +50,8 @@ body {
 #carouselButton {
   right: 0px;
   position: absolute;
-  bottom: 0px; }
+  bottom: 0px;
+  z-index: 1; }
 
 #reserveModal .modal-header {
   background-color: #512da8;
