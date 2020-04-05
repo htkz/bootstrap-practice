@@ -1,11 +1,7 @@
-$(document).ready(() => {
+$(document).ready(function () {
     $('#mycarousel').carousel({ interval: 2000 });
-    $('#carouselButton').click(() => {
-        if (
-            $('#carouselButton')
-                .children('span')
-                .hasClass('fa-pause')
-        ) {
+    $('#carouselButton').click(function () {
+        if ($('#carouselButton').children('span').hasClass('fa-pause')) {
             $('#mycarousel').carousel('pause');
             $('#carouselButton')
                 .children('span')
@@ -20,10 +16,10 @@ $(document).ready(() => {
         }
     });
 
-    $('#loginButton').click(() => {
+    $('#loginButton').click(function() {
         $('#loginModal').modal('toggle');
     });
-    $('#reserveButton').click(() => {
+    $('#reserveButton').click(function() {
         $('#reserveModal').modal('toggle');
     });
 });
